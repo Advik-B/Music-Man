@@ -19,7 +19,7 @@ So I ~~made~~ making an app that combines all the services into one. Then you ca
 |  Import/Export Playlists   |     |⬜|     |     |
 | Cloud Sync | | | ⬜ |
 | Convert playlists to audio files| | ⬜|
-| Add suggestions based on what you listen to| | | |🟥 Because ~~I dont want to code an ai for that shit~~ Its creepy. never trust anyone. even me
+| Add suggestions based on what you listen to| | | |🟥 ~~Because I dont want to code an ai for that shit~~ Because Its creepy. never trust anyone. even me
 
 ## Thanks
 - [@Advik](https://github.com/Advik-B) (me)
