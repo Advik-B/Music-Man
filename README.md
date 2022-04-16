@@ -1,5 +1,5 @@
 # PulsePlayer
-A one-stop for music.
+A one-stop shop for music.
 
 ## Whats this?
 
