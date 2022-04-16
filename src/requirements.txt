@@ -4,3 +4,7 @@ qt-material
 spotdl
 spotify
 spotipy
+pyyaml
+termcolor
+cython
+cx_Freeze
