@@ -1,1 +1,5 @@
-PySide2
+Qt.py
+qt-material
+spotdl
+spotify
+spotipy
