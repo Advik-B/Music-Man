@@ -8,7 +8,7 @@ This is basiclly all the music streaming services COMBINED into one app. For con
 ## Why?
 
 I always __HATED__ the fact that you HAD to buy multiple subscriptions just to listen to music.
-So I ~~made~~ am making an app that combines all the services into one. Then you can import/export playlists, transfer from one service to another. etc
+So I ~~made~~ making an app that combines all the services into one. Then you can import/export playlists, transfer from one service to another. etc
 
 ## Features
 
