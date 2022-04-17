@@ -8,3 +8,4 @@ pyyaml
 termcolor
 cython
 cx_Freeze
+black
