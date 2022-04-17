@@ -11,26 +11,16 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Pulse Player</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.svg</normaloff>icon.svg</iconset>
   </property>
   <property name="tabShape">
    <enum>QTabWidget::Triangular</enum>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>220</y>
-      <width>181</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
-   </widget>
-  </widget>
+  <widget class="QWidget" name="centralwidget"/>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionStuff">
    <property name="text">
