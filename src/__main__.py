@@ -43,6 +43,7 @@ class UserInterface(QMainWindow):
 def main():
     app = QApplication(sys.argv)
     UI = UserInterface()
+    app.setActiveWindow(UI)
     sys.exit(app.exec_())
 
 if __name__ == '__main__':
