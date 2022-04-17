@@ -1,5 +1,4 @@
 PyQt5
-PyQt5-tools
 qt-material
 spotdl
 spotify
