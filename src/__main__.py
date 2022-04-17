@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QAction, QPushButton
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon
 from qt_material import list_themes, apply_stylesheet
@@ -11,13 +11,13 @@ import sys, os
 
 logger = Logger()
 
-
 class UserInterface(QMainWindow):
-    def __init__(self):
+    def __init__(self, ChangeWindowFunc):
         super().__init__()
         self.logger = logger
         self.setWindowCaption("Loading...")
         self.settings = load_settings("settings.yml")
+        self.changewindow = ChangeWindowFunc
         self.initUI()
         self.logger.info("Application loaded")
         self.setWindowCaption()
@@ -28,7 +28,13 @@ class UserInterface(QMainWindow):
         loadUi(os.path.abspath("assets/layout.ui"), self)
         # Set the theme
         # FIXME: The theme library doesn't properly work with UI files
-        # self.setTheme(self.settings["theme"])
+        self.setTheme(self.settings["theme"])
+        self.settings_apperance_scale: QAction = self.findChild(QAction, "actionScale")
+        self.settings_apperance_scale.triggered.connect(
+            
+            lambda: self.logger.info("Edit -> Appearance -> Scale")
+            
+        )
 
     def setWindowCaption(self, caption: str = None):
         if caption is not None:
@@ -39,8 +45,11 @@ class UserInterface(QMainWindow):
             self.logger.info("Window caption changed to: %s" % self.windowTitle())
 
     def setTheme(self, theme: str):
+        EXTRA = dict(
+            density_scale=str(self.settings["scale"]),
+        )
         try:
-            apply_stylesheet(self, theme.replace(" ", "_") + ".xml")
+            apply_stylesheet(self, theme.replace(" ", "_") + ".xml", extra=EXTRA)
             self.settings["theme"] = theme
             self.logger.info("Theme changed to: %s" % theme)
         except Exception as e:
@@ -60,7 +69,7 @@ class UserInterface(QMainWindow):
 def main():
     logger.info("Application starting")
     app = QApplication(sys.argv)
-    UI = UserInterface()
+    UI = UserInterface(ChangeWindowFunc=app.setActiveWindow)
     app.setActiveWindow(UI)
     EXIT_CODE = app.exec_()
     if EXIT_CODE == 0:
