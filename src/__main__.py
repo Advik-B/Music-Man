@@ -1,10 +1,10 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.uic import loadUi
 from qt_material import list_themes, apply_stylesheet
 from utility import (
     load_settings,
     Logger,
 )
-from PyQt5.uic import loadUi
 import sys, os
 
 
