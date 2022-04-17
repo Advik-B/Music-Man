@@ -17,6 +17,7 @@ def load_settings(setting_file):
         "theme": setting.get("theme")
         if setting.get("themes") is not None
         else "dark cyan",
+        "scale": setting.get("scale") if setting.get("scale") is not None else 1,
     }
 
 
