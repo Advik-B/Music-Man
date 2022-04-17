@@ -28,7 +28,7 @@ class UserInterface(QMainWindow):
         loadUi(os.path.abspath("assets/layout.ui"), self)
         # Set the theme
         # FIXME: The theme library doesn't properly work with UI files
-        """self.setTheme(self.settings["theme"])"""
+        # self.setTheme(self.settings["theme"])
 
     def setWindowCaption(self, caption: str = None):
         if caption is not None:
