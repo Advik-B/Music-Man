@@ -1,0 +1,80 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?query=artist%3ATaylor+Swift&type=artist&offset=0&limit=10",
+        "items": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 51955175
+                },
+                "genres": [
+                    "pop"
+                ],
+                "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
+                "id": "06HL4z0CvFAxyc27GXpf02",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb9e3acf1eaf3b8846e836f441",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab676161000051749e3acf1eaf3b8846e836f441",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f1789e3acf1eaf3b8846e836f441",
+                        "width": 160
+                    }
+                ],
+                "name": "Taylor Swift",
+                "popularity": 97,
+                "type": "artist",
+                "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5WiLThuSBwqF7SMRrzQbG6"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 313
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5WiLThuSBwqF7SMRrzQbG6",
+                "id": "5WiLThuSBwqF7SMRrzQbG6",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab6761610000e5eb79c237749f41cedb92acb914",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/ab6761610000517479c237749f41cedb92acb914",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/ab6761610000f17879c237749f41cedb92acb914",
+                        "width": 160
+                    }
+                ],
+                "name": "Taylor Swiftman",
+                "popularity": 6,
+                "type": "artist",
+                "uri": "spotify:artist:5WiLThuSBwqF7SMRrzQbG6"
+            }
+        ],
+        "limit": 10,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 2
+    }
+}
