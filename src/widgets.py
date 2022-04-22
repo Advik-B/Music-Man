@@ -14,7 +14,13 @@ class SettingsAppearance(QDialog):
     def __init__(self, parent=None, config: dict = None):
         super().__init__(parent)
         self.setWindowTitle("Settings")
-        # self.setFixedSize(400, 200)
+        if config is None:
+            config = {
+                
+                'theme': 'Dark Cyan',
+                'scale': '0',
+                
+            }
         self.initUI(config)
         self.show()
 
@@ -28,8 +34,29 @@ class SettingsAppearance(QDialog):
         self.themeLabel = self.findChild(QLabel, "themeLabel")
         self.scaleLabel = self.findChild(QLabel, "scaleLabel")
         self.scaleSlider = self.findChild(QSlider, "scaleSlider")
+        self.themeBox.addItems(list_themes())
+        self.themeBox.currentTextChanged.connect(self.showTheme)
+        self.setTheme(config['theme'])
+    
+    def setTheme(self, theme: str):
+        theme = theme.replace(' ', '_')
+        theme = theme.lower()
+        theme += ".xml"
+        self.showTheme(theme)
+    
+    def showTheme(self):
+        pass
+    
+    def listThemes(self):
+        ThemeList = []
+        for theme in list_themes():
+            ThemeList.append(theme.replace('_', ' ').removesuffix(".xml"))
+        return ThemeList
 
 def main():
     app = QApplication(sys.argv)
-    ex = SettingsAppearance()
+    UI = SettingsAppearance(config={"theme": "Dark Cyan", "scale": "1"})
     sys.exit(app.exec_())
+
+if __name__ == "__main__":
+    main()
