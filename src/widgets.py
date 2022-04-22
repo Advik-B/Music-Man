@@ -8,6 +8,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.uic import loadUi
 from qt_material import list_themes, apply_stylesheet
+from utility import Theme, ThemeNotFoundError
 import sys
 
 
@@ -15,6 +16,7 @@ class SettingsAppearance(QDialog):
     def __init__(self, parent=None, config: dict = None):
         super().__init__(parent)
         self.setWindowTitle("Settings")
+        self.themes = []
         if config is None:
             config = {
                 "theme": "Dark Cyan",
@@ -35,7 +37,8 @@ class SettingsAppearance(QDialog):
         self.scaleSlider = self.findChild(QSlider, "scaleSlider")
         self.themeBox.addItems(self.listThemes())
         self.themeBox.currentTextChanged.connect(self.showTheme)
-        self.setTheme(config["theme"])
+        for theme in list_themes():
+            self.themes.append(Theme(theme))
 
     def setTheme(self, theme: str):
         theme = theme.replace(" ", "_")
@@ -47,10 +50,12 @@ class SettingsAppearance(QDialog):
         pass
 
     def listThemes(self):
-        ThemeList = []
-        for theme in list_themes():
-            ThemeList.append(theme.replace("_", " ").removesuffix(".xml"))
-        return ThemeList
+        tl = []
+        for theme in self.themes:
+            theme: Theme
+            tl.append(theme.toUI())
+            print(theme.toUI())
+        return tl
 
 
 def main():

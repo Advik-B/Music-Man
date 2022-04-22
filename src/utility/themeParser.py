@@ -1,7 +1,10 @@
 from qt_material import list_themes as listThemes
 from dataclasses import dataclass
 
-class ThemeNotFoundError(Exception): pass
+
+class ThemeNotFoundError(Exception):
+    pass
+
 
 @dataclass
 class Theme(str):
@@ -12,12 +15,12 @@ class Theme(str):
 
     """
 
-    current: str
-    __name: str
+    current: str = None
+    __name: str = None
 
     def __init__(self, theme: str):
-        self.current = theme
-        self.__name = self.toQt()
+        self.__name = theme
+        self.current = self.toUI()
         # Perform a check to see if the theme exists
         if self.__name not in listThemes():
             raise ThemeNotFoundError(f"Theme {self.__name} does not exist")
