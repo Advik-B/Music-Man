@@ -47,15 +47,13 @@
     <property name="title">
      <string>Edit</string>
     </property>
-    <widget class="QMenu" name="menuAppearance">
+    <widget class="QMenu" name="menuSettings">
      <property name="title">
-      <string>Appearance</string>
+      <string>Settings</string>
      </property>
-     <addaction name="actionTheme_2"/>
-     <addaction name="actionScale"/>
+     <addaction name="actionAppearance"/>
     </widget>
-    <addaction name="actionSettings"/>
-    <addaction name="menuAppearance"/>
+    <addaction name="menuSettings"/>
    </widget>
    <widget class="QMenu" name="menuPlayList">
     <property name="title">
@@ -100,6 +98,7 @@
     <addaction name="actionAbout_PulsePlayer"/>
     <addaction name="actionGitHub"/>
     <addaction name="actionLicense"/>
+    <addaction name="actionCheck_for_updates"/>
    </widget>
    <addaction name="menuEdit"/>
    <addaction name="menuView"/>
@@ -109,11 +108,6 @@
    <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionSettings">
-   <property name="text">
-    <string>Settings</string>
-   </property>
-  </action>
   <action name="actionNext">
    <property name="text">
     <string>Next</string>
@@ -170,6 +164,12 @@
    </property>
   </action>
   <action name="actionShow_explicit_songs">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Show explicit songs</string>
    </property>
@@ -228,6 +228,16 @@
    </property>
    <property name="text">
     <string>Scale</string>
+   </property>
+  </action>
+  <action name="actionAppearance">
+   <property name="text">
+    <string>Appearance</string>
+   </property>
+  </action>
+  <action name="actionCheck_for_updates">
+   <property name="text">
+    <string>Check for updates</string>
    </property>
   </action>
  </widget>
