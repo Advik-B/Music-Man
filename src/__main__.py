@@ -11,6 +11,7 @@ import sys, os
 
 logger = Logger()
 
+
 class UserInterface(QMainWindow):
     def __init__(self, ChangeWindowFunc):
         super().__init__()
@@ -29,12 +30,6 @@ class UserInterface(QMainWindow):
         # Set the theme
         # FIXME: The theme library doesn't properly work with UI files
         self.setTheme(self.settings["theme"])
-        self.settings_apperance_scale: QAction = self.findChild(QAction, "actionScale")
-        self.settings_apperance_scale.triggered.connect(
-            
-            lambda: self.logger.info("Edit -> Appearance -> Scale")
-            
-        )
 
     def setWindowCaption(self, caption: str = None):
         if caption is not None:
