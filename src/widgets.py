@@ -22,6 +22,7 @@ class SettingsAppearance(QDialog):
                 "theme": "Dark Cyan",
                 "scale": "0",
             }
+        self.config = config
         self.initUI(config)
         self.show()
 
@@ -35,27 +36,41 @@ class SettingsAppearance(QDialog):
         self.themeLabel = self.findChild(QLabel, "themeLabel")
         self.scaleLabel = self.findChild(QLabel, "scaleLabel")
         self.scaleSlider = self.findChild(QSlider, "scaleSlider")
-        self.themeBox.addItems(self.listThemes())
-        self.themeBox.currentTextChanged.connect(self.showTheme)
+        self.beforeStartUp()
+        self.themeBox.currentTextChanged.connect(self.setTheme)
+        self.scaleSlider.valueChanged.connect(self.setScale)
+    
+    def beforeStartUp(self):
+        self.setThemes()
+        self.themeBox.setCurrentText(self.config["theme"])
+        self.themeLabel.setText("Theme: %s" % self.themeBox.currentText())
+        self.scaleLabel.setText("Scale: %s" % str(self.scaleSlider.value()))
+        self.setTheme()
+        self.setScale()
+        
+        
+
+    def setTheme(self):
+        self.themeLabel.setText("Theme: %s" % self.themeBox.currentText())
+        self.showTheme()
+    
+    def setScale(self):
+        self.scaleLabel.setText("Scale: %s" % str(self.scaleSlider.value()))
+        EXTRA = dict(
+            density_scale=str(self.scaleSlider.value()),
+        )
+
+    def showTheme(self):
+        theme = Theme(self.themeBox.currentText())
+        apply_stylesheet(self, theme.toQt())
+
+    def setThemes(self):
         for theme in list_themes():
             self.themes.append(Theme(theme))
-
-    def setTheme(self, theme: str):
-        theme = theme.replace(" ", "_")
-        theme = theme.lower()
-        theme += ".xml"
-        self.showTheme(theme)
-
-    def showTheme(self, theme: str):
-        pass
-
-    def listThemes(self):
         tl = []
         for theme in self.themes:
-            theme: Theme
             tl.append(theme.toUI())
-            print(theme.toUI())
-        return tl
+        self.themeBox.addItems(tl)
 
 
 def main():
