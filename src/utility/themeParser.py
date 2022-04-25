@@ -22,7 +22,7 @@ class Theme(str):
         self.__name = theme
         self.current = self.toUI()
         # Perform a check to see if the theme exists
-        if self.__name not in listThemes():
+        if self.toQt() not in listThemes():
             raise ThemeNotFoundError(f"Theme {self.__name} does not exist")
 
     def __repr__(self):
