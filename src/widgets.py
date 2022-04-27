@@ -39,7 +39,7 @@ class SettingsAppearance(QDialog):
         self.beforeStartUp()
         self.themeBox.currentTextChanged.connect(self.setTheme)
         self.scaleSlider.valueChanged.connect(self.setScale)
-    
+
     def beforeStartUp(self):
         self.setThemes()
         self.themeBox.setCurrentText(self.config["theme"])
@@ -47,13 +47,11 @@ class SettingsAppearance(QDialog):
         self.scaleLabel.setText("Scale: %s" % str(self.scaleSlider.value()))
         self.setTheme()
         self.setScale()
-        
-        
 
     def setTheme(self):
         self.themeLabel.setText("Theme: %s" % self.themeBox.currentText())
         self.showTheme()
-    
+
     def setScale(self):
         self.scaleLabel.setText("Scale: %s" % str(self.scaleSlider.value()))
         EXTRA = dict(
