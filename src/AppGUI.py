@@ -9,6 +9,7 @@ from PyQt5.QtWidgets import (
     QStatusBar,
     QSizePolicy,
     QWidget,
+    QGridLayout,
 )
 from PyQt5.QtCore import QSize
 from PyQt5.QtGui import QIcon
@@ -27,7 +28,7 @@ with open("dark-style.css", "rb") as f:
     dark_theme = f.read().decode("utf-8")
 
 
-class GUI(QWidget):
+class GUI(FramelessWindow):
     def __init__(self):
         super().__init__()
         self.basetitile = "Music Man"
@@ -36,11 +37,11 @@ class GUI(QWidget):
 
     def loadUI(self):
         moniter = get_monitors()[0]
-        self.resize(moniter.width // 2, moniter.height // 2 + moniter.height % 2)
         c.log(f"Window Size {self.size()}")
         loadUi("design.xml", self)
+        self.resize(moniter.width // 2, moniter.height // 2 + ( moniter.height % 2))
         self.setWindowTitle(self.basetitile)
-        self.lay = self.findChild(QVBoxLayout, "layout")
+        self.lay = self.findChild(QGridLayout, "layout")
         self.setLayout(self.lay)
 
 
