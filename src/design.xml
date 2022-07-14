@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1060</width>
-    <height>709</height>
+    <width>1037</width>
+    <height>642</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -128,25 +128,65 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="playerbar">
+     <layout class="QVBoxLayout" name="bottom_area">
       <item>
-       <widget class="QPushButton" name="back_btn">
-        <property name="text">
-         <string>back</string>
+       <layout class="QHBoxLayout" name="playerbar">
+        <item>
+         <widget class="QPushButton" name="back_btn">
+          <property name="text">
+           <string>back</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pause_play_btn">
+          <property name="text">
+           <string>Pause/Play</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="next_btn">
+          <property name="text">
+           <string>Next</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="song_ctrl">
+      <item>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pause_play_btn">
-        <property name="text">
-         <string>Pause/Play</string>
+       <widget class="QDial" name="dial">
+        <property name="minimumSize">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="next_btn">
-        <property name="text">
-         <string>Next</string>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="wrapping">
+         <bool>false</bool>
+        </property>
+        <property name="notchTarget">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="notchesVisible">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
