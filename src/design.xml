@@ -13,16 +13,16 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="horizontalLayoutWidget">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>1041</width>
-     <height>691</height>
+     <y>40</y>
+     <width>1021</width>
+     <height>591</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="layout">
+   <layout class="QVBoxLayout" name="layout">
     <item>
      <layout class="QVBoxLayout" name="nav_layout">
       <item>
@@ -122,6 +122,31 @@
           <width>200</width>
           <height>999999</height>
          </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="playerbar">
+      <item>
+       <widget class="QPushButton" name="back_btn">
+        <property name="text">
+         <string>back</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pause_play_btn">
+        <property name="text">
+         <string>Pause/Play</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="next_btn">
+        <property name="text">
+         <string>Next</string>
         </property>
        </widget>
       </item>
