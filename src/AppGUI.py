@@ -8,6 +8,7 @@ import datetime
 
 c = Console(record=True)
 
+
 class GUI(FramelessWindow):
     def __init__(self):
         super().__init__()
@@ -35,8 +36,10 @@ class GUI(FramelessWindow):
 def main():
     app = QApplication(sys.argv)
     gui = GUI()
-    c.save_html(f"log{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.html", theme=discord_theme)
+    # c.save_html(f"log{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.html", theme=discord_theme)
+    # ^^ Enable this is production
     sys.exit(app.exec_())
+
 
 if __name__ == "__main__":
     main()
