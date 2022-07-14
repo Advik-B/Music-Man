@@ -11,7 +11,7 @@ from PyQt5.QtWidgets import (
     QWidget,
     QGridLayout,
 )
-from PyQt5.QtCore import QSize
+from PyQt5.QtCore import QSize, Qt
 from PyQt5.QtGui import QIcon
 from PyQt5.uic import loadUi
 
@@ -22,13 +22,13 @@ from screeninfo import get_monitors
 from qt_material import apply_stylesheet
 
 from discord_theme import discord_theme
-
+import qdarktheme
 c = Console(record=True)
-with open("dark-style.css", "rb") as f:
+with open("stylesheets/dark-style.qss", "rb") as f:
     dark_theme = f.read().decode("utf-8")
 
 
-class GUI(FramelessWindow):
+class GUI(QWidget):
     def __init__(self):
         super().__init__()
         self.basetitile = "Music Man"
@@ -43,6 +43,8 @@ class GUI(FramelessWindow):
         self.setWindowTitle(self.basetitile)
         self.lay = self.findChild(QGridLayout, "layout")
         self.setLayout(self.lay)
+        # self.setStyleSheet(dark_theme)
+        self.setStyleSheet(qdarktheme.load_stylesheet("light"))
 
 
     def apply_styles(self, *widgets):
@@ -63,6 +65,7 @@ class GUI(FramelessWindow):
 
 def main():
     app = QApplication(sys.argv)
+    app.setAttribute(Qt.ApplicationAttribute.AA_UseHighDpiPixmaps)
     gui = GUI()
     # c.save_html(f"log{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.html", theme=discord_theme)
     # ^^ Enable this is production
