@@ -132,6 +132,16 @@
       <item>
        <layout class="QHBoxLayout" name="playerbar">
         <item>
+         <widget class="QPushButton" name="shuffle_btn">
+          <property name="text">
+           <string>shuffle</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="back_btn">
           <property name="text">
            <string>back</string>
