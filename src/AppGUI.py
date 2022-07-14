@@ -8,6 +8,7 @@ from PyQt5.QtWidgets import (
     QPushButton,
     QStatusBar,
     QSizePolicy,
+    QWidget,
 )
 from PyQt5.QtCore import QSize
 from PyQt5.QtGui import QIcon
@@ -24,7 +25,7 @@ with open("dark-style.css", "rb") as f:
     dark_theme = f.read().decode("utf-8")
 
 
-class GUI(FramelessWindow):
+class GUI(QWidget):
     def __init__(self):
         super().__init__()
         self.basetitile = "Music Man"
@@ -40,6 +41,7 @@ class GUI(FramelessWindow):
         self.setLayout(self.layout_)
         self.navbar = QVBoxLayout()
         self.layout_.addLayout(self.navbar)
+        self.setWindowIcon(QIcon("icons/icon.png"))
 
         self.home_button = QPushButton()
         self.home_button.setText("Home")
@@ -66,12 +68,15 @@ class GUI(FramelessWindow):
         )
 
         self.setMinimumSizes(
-            self.home_button, self.search_button, self.lib_button, size=QSize(100, 100)
+            self.home_button, self.search_button, self.lib_button, size=QSize(150, 50)
+        )
+        self.setMaximumSizes(
+            self.home_button, self.search_button, self.lib_button, size=QSize(200, 100)
         )
 
         self.statusBar = QStatusBar()
         self.status_layout = QVBoxLayout()
-        self.statusBar.setSizeGripEnabled(True)
+        # self.statusBar.setSizeGripEnabled(True)
         self.status_layout.addWidget(self.statusBar)
         self.layout_.addLayout(self.status_layout)
 
