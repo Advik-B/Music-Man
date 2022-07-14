@@ -1,6 +1,4 @@
-# Notice: PulsePlayer will be moving to music man!
-
-# PulsePlayer
+# Music Man
 A one-stop shop for music.
 
 ## Whats this?
