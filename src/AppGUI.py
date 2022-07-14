@@ -24,7 +24,7 @@ from qt_material import apply_stylesheet
 from discord_theme import discord_theme
 import qdarktheme
 c = Console(record=True)
-with open("stylesheets/dark-style.qss", "rb") as f:
+with open(r"stylesheets\CadWin-main\Gui\Stylesheets\CadWin Light Scampi.qss", "rb") as f:
     dark_theme = f.read().decode("utf-8")
 
 
@@ -43,8 +43,8 @@ class GUI(QWidget):
         self.setWindowTitle(self.basetitile)
         self.lay = self.findChild(QGridLayout, "layout")
         self.setLayout(self.lay)
-        # self.setStyleSheet(dark_theme)
-        self.setStyleSheet(qdarktheme.load_stylesheet("light"))
+        self.setStyleSheet(dark_theme)
+        # self.setStyleSheet(qdarktheme.load_stylesheet("light"))
 
 
     def apply_styles(self, *widgets):
