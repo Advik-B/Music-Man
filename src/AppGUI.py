@@ -17,6 +17,7 @@ from PyQt5.QtGui import QIcon
 from qframelesswindow import FramelessWindow
 from rich.console import Console
 from screeninfo import get_monitors
+from qt_material import apply_stylesheet
 
 from discord_theme import discord_theme
 
@@ -40,7 +41,12 @@ class GUI(QWidget):
         self.layout_ = QHBoxLayout()
         self.setLayout(self.layout_)
         self.navbar = QVBoxLayout()
+        self.secondry_navbar = QVBoxLayout()
         self.layout_.addLayout(self.navbar)
+        self.playerBar = QVBoxLayout()
+        self.layout_.addLayout(self.playerBar)
+        self.playerBar.addStretch()
+        self.playerBar.addWidget(QPushButton("Play"))
         self.setWindowIcon(QIcon("icons/icon.png"))
 
         self.home_button = QPushButton()
@@ -79,10 +85,12 @@ class GUI(QWidget):
         # self.statusBar.setSizeGripEnabled(True)
         self.status_layout.addWidget(self.statusBar)
         self.layout_.addLayout(self.status_layout)
+        self.navbar.addLayout(self.secondry_navbar)
+
 
     def apply_styles(self, *widgets):
         for widget in widgets:
-            widget.setStyleSheet(dark_theme)
+            apply_stylesheet(widget, "dark_cyan.xml")
 
     def apply_size_policies(self, *widgets, h, v):
         for widget in widgets:
