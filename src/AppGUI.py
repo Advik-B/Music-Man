@@ -1,12 +1,27 @@
-from PyQt5.QtWidgets import QApplication, QPushButton, QHBoxLayout, QVBoxLayout
-from qframelesswindow import FramelessWindow
-from screeninfo import get_monitors
-from rich.console import Console
-from discord_theme import discord_theme
-import sys
 import datetime
+import sys
+
+from PyQt5.QtWidgets import (
+    QApplication,
+    QHBoxLayout,
+    QVBoxLayout,
+    QPushButton,
+    QStatusBar,
+    QSizePolicy,
+)
+from PyQt5.QtCore import QSize
+from PyQt5.QtGui import QIcon
+
+# from pyqt_svg_button.svgButton import SvgButton as QPushButton
+from qframelesswindow import FramelessWindow
+from rich.console import Console
+from screeninfo import get_monitors
+
+from discord_theme import discord_theme
 
 c = Console(record=True)
+with open("dark-style.css", "rb") as f:
+    dark_theme = f.read().decode("utf-8")
 
 
 class GUI(FramelessWindow):
@@ -25,13 +40,56 @@ class GUI(FramelessWindow):
         self.setLayout(self.layout_)
         self.navbar = QVBoxLayout()
         self.layout_.addLayout(self.navbar)
-        self.home_button = QPushButton("Home")
-        self.search_button = QPushButton("Search")
-        self.lib_button = QPushButton("Library")
+
+        self.home_button = QPushButton()
+        self.home_button.setText("Home")
+        self.search_button = QPushButton()
+        self.search_button.setText("Search")
+        self.lib_button = QPushButton()
+        self.lib_button.setText("Library")
+
         self.navbar.addWidget(self.home_button)
         self.navbar.addWidget(self.search_button)
         self.navbar.addWidget(self.lib_button)
 
+        self.search_button.setIcon(QIcon("svg/search.svg"))
+        self.lib_button.setIcon(QIcon("svg/library.svg"))
+        self.home_button.setIcon(QIcon("svg/home.svg"))
+        self.apply_styles(self.home_button, self.search_button, self.lib_button)
+        # When the window is resized, the home button should be resized to fit the window
+        self.apply_size_policies(
+            self.home_button,
+            self.search_button,
+            self.lib_button,
+            h=QSizePolicy.Expanding,
+            v=QSizePolicy.Expanding,
+        )
+
+        self.setMinimumSizes(
+            self.home_button, self.search_button, self.lib_button, size=QSize(100, 100)
+        )
+
+        self.statusBar = QStatusBar()
+        self.status_layout = QVBoxLayout()
+        self.statusBar.setSizeGripEnabled(True)
+        self.status_layout.addWidget(self.statusBar)
+        self.layout_.addLayout(self.status_layout)
+
+    def apply_styles(self, *widgets):
+        for widget in widgets:
+            widget.setStyleSheet(dark_theme)
+
+    def apply_size_policies(self, *widgets, h, v):
+        for widget in widgets:
+            widget.setSizePolicy(h, v)
+
+    def setMinimumSizes(self, *widgets, size: QSize):
+        for widget in widgets:
+            widget.setMinimumSize(size)
+
+    def setMaximumSizes(self, *widgets, size: QSize):
+        for widget in widgets:
+            widget.setMaximumSize(size)
 
 def main():
     app = QApplication(sys.argv)
