@@ -9,14 +9,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1201</width>
-    <height>732</height>
+    <width>819</width>
+    <height>524</height>
    </rect>
   </property>
   <property name="font">
-   <font>
-    <family>Calibri</family>
-   </font>
+   <font/>
   </property>
   <property name="windowTitle">
    <string>QT Fluent: A windows11-like fluent style QT GUI template.</string>
@@ -999,9 +997,7 @@ QLabel[Note = &quot;true&quot;]{
      <widget class="QTabWidget" name="tabWidget">
       <property name="font">
        <font>
-        <family>Arial</family>
         <pointsize>14</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -1032,9 +1028,7 @@ QLabel[Note = &quot;true&quot;]{
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1059,9 +1053,7 @@ QLabel[Note = &quot;true&quot;]{
            <widget class="QPushButton" name="pushButton">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1075,9 +1067,7 @@ QLabel[Note = &quot;true&quot;]{
            <widget class="QPushButton" name="pushButton_2">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1091,9 +1081,7 @@ QLabel[Note = &quot;true&quot;]{
            <widget class="QPushButton" name="pushButton_3">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1110,9 +1098,7 @@ QLabel[Note = &quot;true&quot;]{
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1136,9 +1122,7 @@ QLabel[Note = &quot;true&quot;]{
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1160,9 +1144,7 @@ QLabel[Note = &quot;true&quot;]{
            <widget class="QPushButton" name="pushButton_5">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1182,9 +1164,7 @@ QLabel[Note = &quot;true&quot;]{
            <widget class="QPushButton" name="pushButton_6">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1201,9 +1181,7 @@ QLabel[Note = &quot;true&quot;]{
            <widget class="QPushButton" name="pushButton_7">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1223,9 +1201,7 @@ QLabel[Note = &quot;true&quot;]{
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -1252,9 +1228,7 @@ QLabel[Note = &quot;true&quot;]{
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1332,9 +1306,7 @@ QLabel[Note = &quot;true&quot;]{
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1422,9 +1394,7 @@ QLabel[Note = &quot;true&quot;]{
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1456,7 +1426,7 @@ QLabel[Note = &quot;true&quot;]{
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;f(x) = 1 - sin(x&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
@@ -1493,7 +1463,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;-1&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;(x) = 1 + sin(x&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1511,9 +1481,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1744,9 +1712,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1903,9 +1869,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -1989,9 +1953,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2085,9 +2047,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2112,9 +2072,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_13">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2131,9 +2089,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_14">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2150,9 +2106,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_15">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2172,9 +2126,7 @@ p, li { white-space: pre-wrap; }
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2201,9 +2153,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2238,7 +2188,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;f(x) = 1 - sin(x&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
@@ -2281,7 +2231,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;-1&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;(x) = 1 + sin(x&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -2386,9 +2336,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2410,9 +2358,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_9">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2432,9 +2378,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_10">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2451,9 +2395,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_11">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2473,9 +2415,7 @@ p, li { white-space: pre-wrap; }
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2507,9 +2447,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2603,9 +2541,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2627,9 +2563,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_17">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2649,9 +2583,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_18">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2668,9 +2600,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_19">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2690,9 +2620,7 @@ p, li { white-space: pre-wrap; }
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -2719,9 +2647,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2756,7 +2682,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;f(x) = 1 - sin(x&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
@@ -2799,7 +2725,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;-1&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;(x) = 1 + sin(x&lt;/span&gt;&lt;span style=&quot; font-size:12px; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -2904,9 +2830,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -2993,9 +2917,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -3152,9 +3074,7 @@ p, li { white-space: pre-wrap; }
         </property>
         <property name="font">
          <font>
-          <family>Calibri</family>
           <pointsize>-1</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -3179,9 +3099,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_21">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -3198,9 +3116,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_22">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -3217,9 +3133,7 @@ p, li { white-space: pre-wrap; }
            <widget class="QPushButton" name="pushButton_23">
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -3239,9 +3153,7 @@ p, li { white-space: pre-wrap; }
             </property>
             <property name="font">
              <font>
-              <family>Calibri</family>
               <pointsize>-1</pointsize>
-              <weight>50</weight>
               <italic>false</italic>
               <bold>false</bold>
              </font>
@@ -3408,8 +3320,6 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusBar">
    <property name="font">
     <font>
-     <family>微软雅黑</family>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
