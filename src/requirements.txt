@@ -3,3 +3,4 @@ rich
 screeninfo
 pyqt-svg-button
 absresgetter
+pyqtdarktheme
