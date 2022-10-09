@@ -1,7 +1,7 @@
 import datetime
 import sys
 
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication,
     QHBoxLayout,
     QVBoxLayout,
@@ -11,18 +11,16 @@ from PyQt5.QtWidgets import (
     QWidget,
     QGridLayout,
 )
-from PyQt5.QtCore import QSize, Qt
-from PyQt5.QtGui import QIcon
-from PyQt5.uic import loadUi
+from PyQt6.QtCore import QSize, Qt
+from PyQt6.QtGui import QIcon
+from PyQt6.uic import loadUi
 
 # from pyqt_svg_button.svgButton import SvgButton as QPushButton
-from qframelesswindow import FramelessWindow
 from rich.console import Console
 from screeninfo import get_monitors
 from qt_material import apply_stylesheet
 
 from discord_theme import discord_theme
-import qdarktheme
 c = Console(record=True)
 with open(r"stylesheets\CadWin-main\Gui\Stylesheets\CadWin Light Scampi.qss", "rb") as f:
     dark_theme = f.read().decode("utf-8")
@@ -65,11 +63,10 @@ class GUI(QWidget):
 
 def main():
     app = QApplication(sys.argv)
-    app.setAttribute(Qt.ApplicationAttribute.AA_UseHighDpiPixmaps)
     gui = GUI()
     # c.save_html(f"log{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.html", theme=discord_theme)
     # ^^ Enable this is production
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
 
 if __name__ == "__main__":
