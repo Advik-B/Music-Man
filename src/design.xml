@@ -32,23 +32,74 @@
        <enum>QLayout::SetMinAndMaxSize</enum>
       </property>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="home_btn">
+        <property name="statusTip">
+         <string>Home sweet home!</string>
+        </property>
         <property name="text">
          <string>Home</string>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>Search</string>
+        <property name="icon">
+         <iconset>
+          <normalon>svg/home.svg</normalon>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="search_btn">
+        <property name="statusTip">
+         <string>Search for a song. or love</string>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>svg/search.svg</normalon>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lib_btn">
+        <property name="statusTip">
+         <string>Look at the songs you have</string>
+        </property>
         <property name="text">
          <string>Library</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>svg/library.svg</normalon>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
