@@ -39,8 +39,7 @@ class GUI(QWidget):
         self.setWindowTitle(self.basetitile)
         self.lay = self.findChild(QGridLayout, "layout")
         self.setLayout(self.lay)
-        self.setStyleSheet(dark_theme)
-        # self.setStyleSheet(qdarktheme.load_stylesheet("light"))
+        apply_stylesheet(self, "dark_cyan.xml")
 
 
     def apply_styles(self, *widgets):
