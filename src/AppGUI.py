@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow, QHBoxLayout
 from PyQt6.uic import loadUi
-
+from PyQt6.QtGui import QPalette, QIcon
 import sys
 
 
