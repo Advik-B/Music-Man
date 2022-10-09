@@ -4,3 +4,4 @@ screeninfo
 pyqt-svg-button
 absresgetter
 pyqtdarktheme
+robobrowser
