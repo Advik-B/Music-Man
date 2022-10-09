@@ -41,7 +41,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normalon>svg/home.svg</normalon>
+          <normalon>svg/light-theme/home.svg</normalon>
          </iconset>
         </property>
         <property name="iconSize">
@@ -65,7 +65,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normalon>svg/search.svg</normalon>
+          <normalon>svg/light-theme/search.svg</normalon>
          </iconset>
         </property>
         <property name="iconSize">
@@ -89,7 +89,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normalon>svg/library.svg</normalon>
+          <normalon>svg/light-theme/library.svg</normalon>
          </iconset>
         </property>
         <property name="iconSize">
