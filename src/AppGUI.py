@@ -6,6 +6,7 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.uic import loadUi
 from PyQt6.QtGui import QPalette, QIcon
+import qdarktheme
 import sys
 
 
@@ -21,12 +22,10 @@ class MainGUI(QMainWindow):
         self.home_btn = self.findChild(QPushButton, "home_btn")
         self.lib_btn = self.findChild(QPushButton, "lib_btn")
         self.mbar = self.menuBar()
-        # self.home_btn.setIcon(QIcon("svg/home.svg"))
-        # self.search_btn.setIcon(QIcon("svg/search.svg"))
-        # self.lib_btn.setIcon(QIcon("svg/library.svg"))
-
+        self.mbar.setNativeMenuBar(False)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     gui = MainGUI()
+    app.setStyleSheet(qdarktheme.load_stylesheet("light"))
     app.exec()
