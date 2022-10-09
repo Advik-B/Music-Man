@@ -22,8 +22,6 @@ from qt_material import apply_stylesheet
 
 from discord_theme import discord_theme
 c = Console(record=True)
-with open(r"stylesheets\CadWin-main\Gui\Stylesheets\CadWin Light Scampi.qss", "rb") as f:
-    dark_theme = f.read().decode("utf-8")
 
 
 class GUI(QWidget):
