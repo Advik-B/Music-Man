@@ -66,7 +66,7 @@ def main():
     app = QApplication(sys.argv)
     UI = UserInterface(ChangeWindowFunc=app.setActiveWindow)
     app.setActiveWindow(UI)
-    EXIT_CODE = app.exec_()
+    EXIT_CODE = app.exec()
     if EXIT_CODE == 0:
         logger.info("Application exiting with code: %s" % EXIT_CODE)
     else:
