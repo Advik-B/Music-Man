@@ -1,6 +1,6 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QAction, QPushButton
+from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton
 from PyQt6.uic import loadUi
-from PyQt6.QtGui import QIcon
+from PyQt6.QtGui import QIcon, QAction
 from qt_material import list_themes, apply_stylesheet
 from utility import (
     load_settings,
